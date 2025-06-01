@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body class="flex flex-col md:flex-row max-w-[73rem] mx-auto mt-10">
-    <div class="bg-dark--1 md:w-[30rem] w-full p-9 overflow-y-scroll ">
+    <div class="bg-dark--1 md:w-[30rem] w-full p-9 overflow-y-scroll hide-scrollbar">
   <img src="image/logo.png" alt="logo" class="w-20 h-10 cursor-pointer">
 
 
 
 
-     <form class="form hidden bg-gray-800 h-[13rem] p-3 rounded-xl shadow-lg max-w-xl mx-auto grid grid-cols-3 gap-5 text-white">
+     <form class="form hidden bg-gray-800 h-[13rem] overflow-y-scroll hide-scrollbar p-3 rounded-xl shadow-lg max-w-xl mx-auto grid grid-cols-3 gap-5 text-white">
   <div class="col-span-2">
     <label for="type" class="block text-sm font-medium mb-1">Type</label>
     <select id="type" class="form__input--type w-full p-2 rounded-md bg-white text-black focus:outline-none">
@@ -71,8 +71,8 @@
   </div>
 </form>
 
-<ul class="overflow-scroll summary">
-<li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo eligendi nisi et dolorem, perspiciatis consequatur ex beatae eaque quidem fugiat, dicta mollitia. Nemo, fugiat tenetur iure ratione minus minima dolorem.</li>
+<ul class="summary overflow-y-scroll h-[25rem] hide-scrollbar mt-20">
+  <!-- Workouts will be added here -->
 </ul>
 
 

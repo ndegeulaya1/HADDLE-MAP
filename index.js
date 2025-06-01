@@ -75,7 +75,7 @@ const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
-const summary = document.querySelector('.summary');
+
 
 class App {
   #map;
@@ -275,7 +275,8 @@ class App {
       </li>
       `;
 
-    summary.insertAdjacentHTML('afterend', html);
+    const summary = document.querySelector('.summary');
+  summary.insertAdjacentHTML('beforeend', html);
   }
 
   _moveToPopup(e) {

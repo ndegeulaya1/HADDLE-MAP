@@ -225,11 +225,29 @@
   .h-\[30rem\] {
     height: 30rem;
   }
+  .h-\[40rem\] {
+    height: 40rem;
+  }
+  .h-\[50\%\] {
+    height: 50%;
+  }
+  .h-\[100\%\] {
+    height: 100%;
+  }
+  .h-full {
+    height: 100%;
+  }
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
   .w-50 {
     width: calc(var(--spacing) * 50);
+  }
+  .w-\[10rem\] {
+    width: 10rem;
+  }
+  .w-\[30rem\] {
+    width: 30rem;
   }
   .w-full {
     width: 100%;
@@ -254,6 +272,9 @@
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .flex-col-reverse {
     flex-direction: column-reverse;
@@ -372,6 +393,21 @@
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
+    }
+  }
+  .md\:h-\[30rem\] {
+    @media (width >= 48rem) {
+      height: 30rem;
+    }
+  }
+  .md\:h-full {
+    @media (width >= 48rem) {
+      height: 100%;
+    }
+  }
+  .md\:w-\[30rem\] {
+    @media (width >= 48rem) {
+      width: 30rem;
     }
   }
   .md\:flex-row {

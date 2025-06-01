@@ -75,6 +75,7 @@ const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
+const summary = document.querySelector('.summary');
 
 class App {
   #map;
@@ -228,7 +229,7 @@ class App {
 
   _renderWorkout(workout) {
     let html = `
-      <li class="workout workout--${workout.type} overflow-y-scroll  text-white  text-white mt-2 border-1 px-1 border-white" data-id="${workout.id}">
+      <li class="workout workout--${workout.type}   text-white  text-white mt-2 border-1 px-1 border-white" data-id="${workout.id}">
         <h2 class="workout__title">${workout.description}</h2>
         <div class="workout__details">
           <span class="workout__icon">${
@@ -274,7 +275,7 @@ class App {
       </li>
       `;
 
-    form.insertAdjacentHTML('afterend', html);
+    summary.insertAdjacentHTML('afterend', html);
   }
 
   _moveToPopup(e) {
